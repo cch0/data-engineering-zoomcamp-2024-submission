@@ -20,11 +20,19 @@ B: 3.605551275463989
 
 <br>
 
+[python code](./question3.py)
+
+<br>
+
 A: 353
 
 <br>
 
 # Question 4: Merge the 2 generators using the ID column. Calculate the sum of ages of all the people loaded as described above.
+
+<br>
+
+[python code](./question4.py)
 
 <br>
 
