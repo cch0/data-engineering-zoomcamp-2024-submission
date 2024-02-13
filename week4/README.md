@@ -45,7 +45,7 @@ https://lookerstudio.google.com/reporting/6cad7582-2066-47e7-9c27-a3e9b37fa56c
 
 <br>
 
-**answer**: Yello
+**answer**: Yellow
 
 <br>
 
