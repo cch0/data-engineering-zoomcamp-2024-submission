@@ -1,4 +1,4 @@
-       
+```       
        
        Name        |       Type        | Is Hidden | Description
 -------------------+-------------------+-----------+-------------
@@ -10,3 +10,5 @@
  primary key       | _row_id           |           |
  distribution key  | _row_id           |           |
  table description | taxi_zone         |           |
+
+```

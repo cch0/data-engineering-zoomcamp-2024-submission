@@ -1,5 +1,5 @@
  
- 
+ ```
  vendorid              | bigint                      | false     |
  tpep_pickup_datetime  | timestamp without time zone | false     |
  tpep_dropoff_datetime | timestamp without time zone | false     |
@@ -23,4 +23,5 @@
  primary key           | _row_id                     |           |
  distribution key      | _row_id                     |           |
  table description     | trip_data                   |           |
+```
 
