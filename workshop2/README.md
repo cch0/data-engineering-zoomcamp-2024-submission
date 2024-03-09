@@ -3,9 +3,7 @@
 
 <br>
 
-**Answer**: 
-
-Option 1: Yorkville East, Steinway
+**Answer**: Yorkville East, Steinway
 
 <br>
 
@@ -83,9 +81,7 @@ where stats_trip_time.avg_trip_time = highest_avg_trip_time.highest_avg
 
 <br>
 
-**Answer**: 
-
-Option 4: 1 
+**Answer**: 1 
 
 <br>
 
@@ -100,9 +96,7 @@ Option 4: 1
 
 <br>
 
-**Answer**: 
-
-Option 2: LaGuardia Airport, Lincoln Square East, JFK Airport
+**Answer**: LaGuardia Airport, Lincoln Square East, JFK Airport
 
 <br>
 
