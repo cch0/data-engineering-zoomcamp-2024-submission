@@ -168,6 +168,9 @@ Sending the messages
 
 **Answer**
 
+```
+91 sec
+```
 
 
 <br>
@@ -184,11 +187,16 @@ Sending the messages
 
 **Answer**
 
+```
+DataFrame[lpep_pickup_datetime: string, lpep_dropoff_datetime: string, PULocationID: int, DOLocationID: int, passenger_count: double, trip_distance: double, tip_amount: double]
+```
 
 <br>
 
 **Solution**
 
+
+![answer 6](./question6.png)
 
 
 
@@ -203,11 +211,16 @@ Sending the messages
 **Answer**
 
 
+```
+DOLocationID 71
+```
+
+
 <br>
 
 **Solution**
 
-
+![answer 7](./question7.png)
 
 
 

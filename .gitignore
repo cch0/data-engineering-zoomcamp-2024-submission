@@ -2,3 +2,4 @@ venv01/
 **/*.gz
 
 **/.DS_Store
+**/.venv
