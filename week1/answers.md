@@ -12,6 +12,7 @@
 
 ## Prepare Postgres
 
+```
 (base) will@instance-1:~/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql$ ./ingest.sh 
 inserted another chunk, took 6.881 second
 inserted another chunk, took 6.884 second
@@ -20,24 +21,29 @@ inserted another chunk, took 6.884 second
 inserted another chunk, took 7.159 second
 inserted another chunk, took 2.877 second
 Finished ingesting data into the postgres database
-
+```
 
 # Question 3: How many taxi trips were totally made on September 18th 2019?
 
+```
 select count(*)
 from green_taxi_trips
 where lpep_pickup_datetime >= '2019-09-18'
 and lpep_dropoff_datetime < '2019-09-19'
+```
 
-
+<br>
 
 15612
+
+<br>
 
 
 # Question 4. Largest trip for each day
 
 ## solution based on trip duration
 
+```sql
 select data.lpep_pickup_datetime, data.duration
 from
 (
@@ -50,13 +56,18 @@ select max(lpep_dropoff_datetime - lpep_pickup_datetime) as max_duration
 from green_taxi_trips
 ) max_data
 on data.duration = max_data.max_duration
+```
 
+<br>
 
 "2019-09-26 08:58:52"	"4 days 04:45:02"
 
+<br>
 
 ##  solution based on trip distance
 
+
+```sql
 select data.lpep_pickup_datetime
 from (
 	select lpep_pickup_datetime, trip_distance
@@ -68,16 +79,20 @@ select max(trip_distance) as max_trip_distance
 from green_taxi_trips
 ) as max_distance
 on data.trip_distance = max_distance.max_trip_distance
+```
+
+<br>
 
 2019-09-26 19:32:52
 
-
+<br>
 
 2019-09-26
 
 
 # Question 5: Three biggest pick up Boroughs
 
+```sql
 
 select data.*
 from
@@ -97,17 +112,19 @@ order by total_amount desc
 where "total_amount" > 50000
 limit 3
 
+```
 
 
-
-
+<br>
 
 "Brooklyn" "Manhattan" "Queens"
+
+<br>
 
 
 # Question 6: Largest tip
 
-
+```sql
 select *
 from
 (
@@ -134,18 +151,20 @@ from
 ) as max_data
 order by max_data."max_tip" desc
 
+```
 
+<br>
 
 JFK Airport
 
-# ==========================================================
+<br>
 
 
 
 # Question 7: 
 
 
-
+```bash
 (base) will@instance-1:~/data-engineering-zoomcamp/01-docker-terraform/1_terraform_gcp/terraform/terraform_with_variables$ terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -216,4 +235,4 @@ google_storage_bucket.demo-bucket: Creation complete after 1s [id=cch-terraform-
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
-
+```
