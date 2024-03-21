@@ -11,7 +11,7 @@ OPTIONS (
 
 <br>
 
-# distinct yeat from pickup_datetime
+# distinct year from pickup_datetime
 
 ```sql
 with tripdata as (
